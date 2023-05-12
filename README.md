@@ -1,1 +1,1 @@
-### I attended the 3 weeks women techsters bootcamp 26, and I was able to do all this.
+### Presently attending the 3 weeks women techsters bootcamp 26.
