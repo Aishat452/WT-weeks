@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,124 @@
 
     <link rel="stylesheet" href="survey.css">
 </head>
+
 <body>
-    
+    <h1>Tech4Dev Survey Form</h1>
+
+    <form id="form">
+        <div class="form-control">
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your name"><br>
+        </div>
+
+        <div class="form-control">
+            <label for="phone-number">Phone number:</label>
+            <input id="phone-number" type="number" placeholder="Enter your phone number">
+        </div>
+
+        <div class="form-control">
+        <label for="email">Email:</label>
+        <input id="email" type="text" placeholder="Enter your Email"><br>
+        </div>
+
+        <div class="form-control">
+            <label for="age">Age:</label>
+            <input id="age" type="number" min="1" placeholder="Enter your age">
+        </div>
+
+        <div class="form-control">
+            <label for="country">Country:</label>
+            <input id="country" type="text" placeholder="Enter your Country">
+        </div>
+
+        <div class="form-control">
+            <label for="role">Which option best describes you?</label>
+
+            <!-- Dropdown Options -->
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="self-employed">Self-Employed</option>
+                <option value="intern">Intern</option>
+                <option value="prof">Professional</option>
+                <option value="freelance">Freelance</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>Would you recommend Aishat for Woman Leader? </label>
+
+            <label for="recommended-1">
+                <input type="radio" id="recommended-1" name="recommend" class="box">Yes</input>
+            </label>
+
+            <label for="recommended-2">
+                <input type="radio" id="recommended-2" name="recommend" class="box">No</input>
+            </label>
+
+            <label for="recommended-3">
+                <input type="radio" id="recommended-3" name="recommend" class="box">Maybe</input>
+            </label>
+        </div>
+
+        <!-- CTRL + D -->
+        <!-- Shift + Alrt + F -->
+
+        <div class="form-control">
+            <label>Programming Languages & Fameworks
+                <small>(Check all that apply)</small>
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" name="box" class="box"> React js</input>
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" name="box" class="box"> Angular</input>
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" name="box" class="box"> Python</input>
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" name="box" class="box"> Django</input>
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" name="box" class="box"> Laravel</input>
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" name="box" class="box"> Vue js</input>
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" name="box" class="box"> Go lang</input>
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" name="box" class="box"> C#</input>
+            </label>
+            <br>
+
+        </div>
+
+        <textarea name="comment" id="comment" placeholder="Enter your information here!"></textarea>
+
+        <button id="submit-btn" type="submit">Submit</button>
+
+    </form>
+
+    <script src="survey.js"></script>
 </body>
+
 </html>
