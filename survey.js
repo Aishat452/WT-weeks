@@ -1,16 +1,16 @@
-// Get the form element and submit button
+// I get the form element and submit button
 const form = document.getElementById("form");
 const submitBtn = document.getElementById("submit-btn");
 
-// Add event listener to the submit button
+// I added an event listener to the submit button
 submitBtn.addEventListener("click", (event) => {
   event.preventDefault(); // Prevent form from submitting normally
   submitForm(); // Call the function to handle the form submission
 });
 
-// Function to handle the form submission
+// I wrote the function that should handle the form submission
 function submitForm() {
-  // Get the values of all the form inputs
+  // Getting all the form inputs values
   const name = document.getElementById("name").value;
   const phoneNumber = document.getElementById("phone-number").value;
   const email = document.getElementById("email").value;
@@ -23,7 +23,7 @@ function submitForm() {
 
   const comment = document.getElementById("comment").value;
 
-  // Create an object with the form data
+  // An object with the form data, though I thought of using array
   const formData = {
     name,
     phoneNumber,
@@ -36,8 +36,6 @@ function submitForm() {
     comment,
   };
 
-  // Log the form data to the console (for testing purposes)
+  // Log the form data to the console (for assignment submission purposes)
   console.log(formData);
-
-  // Here, you can add code to send the form data to a server or perform any other action with it
 }

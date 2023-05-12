@@ -33,10 +33,11 @@ body {
     border-radius: 5px;
     margin-top: 5px;
     box-sizing: border-box;
+    resize: none;
   }
   
   button[type="submit"] {
-    background-color: #ff6347;
+    background-color: #ff4500;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -46,7 +47,7 @@ body {
   }
   
   button[type="submit"]:hover {
-    background-color: #ff4500;
+    background-color: #ff6347;
   }
   
 .box{
