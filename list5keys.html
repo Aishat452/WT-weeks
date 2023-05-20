@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>5 JS Keywords Examples: Assignment 5</title>
 </head>
 <style>
-    h1 {
-       color: brown;
-       font-size: 15px;
-       }
+  h1 {
+    color: brown;
+    font-size: 15px;
+  }
 </style>
+
 <body>
-  
+
   <h1 id="result"></h1>
-  
-  
-  
-<script>
-// Setting Variables
-var name = "Aisha";
-let age = 30;
-const PI = 4.1390;
 
-// Conditional statement
-if (age >= 18) {
-  document.getElementById("result").textContent = "You are an adult.";
-} else {
-  document.getElementById("result").textContent = "You are a minor.";
-}
 
-// Switch statement
-let day = 3;
-let dayName;
 
-switch (day) {
-  case 1:
-    dayName = "Monday";
-    break;
-  case 2:
-    dayName = "Tuesday";
-    break;
-  case 3:
-    dayName = "Wednesday";
-    break;
-  case 4:
-    dayName = "Thursday";
-    break;
-  case 5:
-    dayName = "Friday";
-    break;
-  default:
-    dayName = "Unknown";
-}
+  <script>
+    // Setting Variables
+    var name = "Aisha";
+    let age = 30;
+    const PI = 4.1390;
 
-document.getElementById("result").textContent += " Today is " + dayName;
+    // Conditional statement
+    if (age >= 18) {
+      document.getElementById("result").textContent = "You are an adult.";
+    } else {
+      document.getElementById("result").textContent = "You are a minor.";
+    }
 
-</script>  
+    // Switch statement
+    let day = 3;
+    let dayName;
+
+    switch (day) {
+      case 1:
+        dayName = "Monday";
+        break;
+      case 2:
+        dayName = "Tuesday";
+        break;
+      case 3:
+        dayName = "Wednesday";
+        break;
+      case 4:
+        dayName = "Thursday";
+        break;
+      case 5:
+        dayName = "Friday";
+        break;
+      default:
+        dayName = "Unknown";
+    }
+
+    let all = document.getElementById("result").textContent += " Today is " + dayName;
+
+    console.log(all);
+
+  </script>
 </body>
+
 </html>
